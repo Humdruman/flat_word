@@ -5,7 +5,7 @@ extends Node
 # var b = "textvar"
 
 func _ready():
-	$Player/AudioStreamPlayer2D.play()
+	#$Player/AudioStreamPlayer2D.play()
 	pass
 
 
