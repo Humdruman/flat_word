@@ -12,12 +12,12 @@ config_version=3
 
 config/name="flat"
 run/main_scene="res://main.tscn"
-config/icon="res://icon.png"
+boot_splash/image="res://1442552887_Lords of the Fallen - Map.png"
+config/icon="res://Word.png"
 
 [display]
 
-window/size/width=640
-window/size/height=800
+window/size/height=640
 window/handheld/emulate_touchscreen=true
 
 [input]
