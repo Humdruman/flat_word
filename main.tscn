@@ -35,9 +35,9 @@ _sections_unfolded = [ "Transform" ]
 material = SubResource( 1 )
 position = Vector2( 314.01, 562.273 )
 scale = Vector2( 4, 3 )
-mass = 0.102041
-_sections_unfolded = [ "Angular", "Applied Forces", "Collision", "Linear", "Material", "Pickable", "Transform", "Visibility", "Z Index", "collision" ]
-jump = 25
+mass = 10.0
+_sections_unfolded = [ "Angular", "Applied Forces", "Collision", "Linear", "Material", "Pause", "Pickable", "Transform", "Visibility", "Z Index", "collision" ]
+jump = 40
 
 [node name="Camera2D" type="Camera2D" parent="Player" index="2"]
 
