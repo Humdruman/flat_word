@@ -10,7 +10,7 @@ source_file="res://maxresdefault.jpg"
 source_md5="bc9fc588f7ce30f2d69c7e6dc895ba5d"
 
 dest_files=[ "res://.import/maxresdefault.jpg-22355f9a31ba67f87dd660e1e919c886.stex" ]
-dest_md5="bcca4ac2ee1e8d60abac496e86c38264"
+dest_md5="296fb6b6a483a93da3c58257bdeff517"
 
 [params]
 
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0
