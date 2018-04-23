@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/WARUDO ICO TEST.jpg-a450488e387582e73d337c9bebfb18a9.stex"
+
+[deps]
+
+source_file="res://WARUDO ICO TEST.jpg"
+source_md5="53393f0666b1e28c2de39f29689f4c0f"
+
+dest_files=[ "res://.import/WARUDO ICO TEST.jpg-a450488e387582e73d337c9bebfb18a9.stex" ]
+dest_md5="546118bebad6a8dc07f222090443374b"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
