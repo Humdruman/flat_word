@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://main.gd" type="Script" id=1]
 [ext_resource path="res://maxresdefault.jpg" type="Texture" id=2]
 [ext_resource path="res://block.tscn" type="PackedScene" id=3]
 [ext_resource path="res://figure.tscn" type="PackedScene" id=4]
+[ext_resource path="res://media/units/player/crusader/player.gd" type="Script" id=5]
 
 [sub_resource type="CanvasItemMaterial" id=1]
 
@@ -30,23 +31,28 @@ rotation = -0.0139421
 scale = Vector2( 3.08933, 1.572 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="Player" parent="." index="2" instance=ExtResource( 4 )]
+[node name="Player" type="KinematicBody2D" parent="." index="2" instance=ExtResource( 4 )]
 
 material = SubResource( 1 )
 position = Vector2( 314.01, 562.273 )
 scale = Vector2( 4, 3 )
-mass = 10.0
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 5 )
 _sections_unfolded = [ "Angular", "Applied Forces", "Collision", "Linear", "Material", "Pause", "Pickable", "Transform", "Visibility", "Z Index", "collision" ]
-jump = 40
+jump = null
+speed = 200
 
 [node name="Camera2D" type="Camera2D" parent="Player" index="2"]
 
-position = Vector2( -1.47372, -0.756969 )
-scale = Vector2( 1, 1.5 )
+position = Vector2( 6.18868, -20.4666 )
+scale = Vector2( 1.93043, 2.99962 )
 anchor_mode = 1
 rotating = false
 current = true
-zoom = Vector2( 0.5, 0.5 )
+zoom = Vector2( 1, 1 )
 limit_left = -10000000
 limit_top = -10000000
 limit_right = 10000000

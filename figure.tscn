@@ -4,10 +4,6 @@
 [ext_resource path="res://player/player.png" type="Texture" id=2]
 [ext_resource path="res://player/move-r-1.png" type="Texture" id=3]
 
-
-
-
-
 [sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
@@ -23,30 +19,18 @@ custom_solver_bias = 0.0
 radius = 39.6329
 height = 45.9004
 
-[node name="Player" type="RigidBody2D"]
+[node name="Player" type="KinematicBody2D"]
 
 position = Vector2( 277.747, 153.823 )
 scale = Vector2( 0.5, 0.5 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
-mode = 2
-mass = 1.0
-friction = 1.0
-bounce = 0.0
-gravity_scale = 1.0
-custom_integrator = false
-continuous_cd = 0
-contacts_reported = 0
-contact_monitor = false
-sleeping = false
-can_sleep = true
-linear_velocity = Vector2( 0, 0 )
-linear_damp = -1.0
-angular_velocity = 0.0
-angular_damp = -1.0
+collision/safe_margin = 0.08
 script = ExtResource( 1 )
 _sections_unfolded = [ "Collision", "Material", "Transform", "Z Index", "collision" ]
+jump = null
+speed = null
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="." index="0"]
 

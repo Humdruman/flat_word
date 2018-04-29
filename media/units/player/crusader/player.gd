@@ -1,21 +1,23 @@
-extends RigidBody2D
+extends KinematicBody2D
 
-const SPEED = 100
+
 export (int) var jump;
+export (int) var speed;
+const GRAVITATION = 20;
+const RESISTANCE = Vector2(0, -1)
+
 var dir = Vector2()
 
 
-func _process(delta):
-	
+
+func _physics_process(delta):
+	dir.y += GRAVITATION;
 	if Input.is_action_pressed("ui_left"):
-		position.x -=  5
-		$AnimatedSprite.play();
+		dir.x = -speed
+		#$AnimatedSprite.play();
 	elif Input.is_action_pressed("ui_right"):
-		position.x +=  5
-		$AnimatedSprite.play();
-	elif Input.is_action_just_pressed("ui_jump"):
-		position.y -= jump
-	else:
-		$AnimatedSprite.stop();
+		dir.x = speed
+		#$AnimatedSprite.play();
+	move_and_slide(dir,RESISTANCE)
 	
 		
