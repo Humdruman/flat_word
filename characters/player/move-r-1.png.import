@@ -2,14 +2,14 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/move-r-1.png-6d6d8832a4c5df036e864a6630c8cffb.stex"
+path="res://.import/move-r-1.png-1f09defd23ac35ddee5e9a2c8e0371df.stex"
 
 [deps]
 
-source_file="res://player/move-r-1.png"
+source_file="res://characters/player/move-r-1.png"
 source_md5="48db25c7a70514c96f37659325736f23"
 
-dest_files=[ "res://.import/move-r-1.png-6d6d8832a4c5df036e864a6630c8cffb.stex" ]
+dest_files=[ "res://.import/move-r-1.png-1f09defd23ac35ddee5e9a2c8e0371df.stex" ]
 dest_md5="f7242f3ea41ba7695e891067aa36f5d5"
 
 [params]
